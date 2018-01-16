@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <PreserveCompilationContext>true</PreserveCompilationContext>
+    <AssemblyName>Nbt</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>Nbt</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="wwwroot\**\*;App_Data\**\*">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.*" />
+    <PackageReference Include="ServiceStack.Admin.Core" Version="5.0.3" />
+    <PackageReference Include="ServiceStack.Api.OpenApi.Core" Version="5.0.3" />
+    <PackageReference Include="ServiceStack.Client.Core" Version="5.0.3" />
+    <PackageReference Include="ServiceStack.Common.Core" Version="5.0.3" />
+    <PackageReference Include="ServiceStack.Core" Version="5.0.3" />
+    <PackageReference Include="ServiceStack.Interfaces.Core" Version="5.0.3" />
+    <PackageReference Include="ServiceStack.OrmLite.Core" Version="5.0.3" />
+    <PackageReference Include="ServiceStack.OrmLite.Sqlite.Core" Version="5.0.3" />
+    <PackageReference Include="ServiceStack.Redis.Core" Version="5.0.3" />
+    <PackageReference Include="ServiceStack.Server.Core" Version="5.0.3" />
+    <PackageReference Include="ServiceStack.Text.Core" Version="5.0.3" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nbt Web Services</title>
+<style>
+    BODY, H1, H2, H3 {
+        margin: 0;
+        padding: 0;
+    }
+    BODY
+    {
+        background: #fff url(img/bg-body-1024.png) repeat-y top left;
+        font: 16px/22px "Helvetica Neue", arial, freesans, clean, sans-serif;
+        color: #444;
+        width: 860px;
+    }
+    #body {
+        padding: 0 5px 120px 20px;
+    }
+    A IMG
+    {
+        border: none;
+    }
+    A {
+        color: #00F;
+    }
+    #header-links
+    {
+        top: 10px;
+        left: 270px;
+        position: absolute;
+    }
+    #header-links A, #footer-links A
+    {
+        color: #0000FF;
+        margin-left: 0.5em;
+    }
+    #github
+    {
+        position: absolute;
+        top: 10px;
+        left: 770px;
+    }
+    H1
+    {
+        line-height: 60px;
+    }
+    DT {
+        font-weight: bold;
+    }
+    DT, DD {
+        line-height: 20px;
+    }
+    TABLE {
+      border-collapse:collapse;
+      border: solid 1px #ccc;
+      margin: 0 0 20px 0;
+    }
+    TH {
+      text-align: left;
+      text-shadow: #fff 1px 1px -1px;
+      background: #f1f1f1;
+      white-space:nowrap;
+      font-weight: bold;
+    }
+    TH, TD {
+      padding: 4px 8px;
+      font-size: 13px;
+      font-family: Arial;
+    }
+    TD {
+      vertical-align: top;
+    }
+    TD.c3 A {
+        padding: 0 10px;
+        line-height: 13px;
+        border-right: solid 1px #eee;
+    }
+    TD.c3 A:first-child {
+        padding-left: 0;
+    }
+    TD.c4  {
+        color: #888;
+    }
+
+    H2
+    {
+        margin: 50px 0 20px 0;
+        padding: 10px 0 0 0;
+        border-top: solid 4px #ccc;
+    }
+
+    #footer
+    {
+        background: #f1f1f1 url(img/bg-footer.png) repeat-x 0 0;
+        height: 60px;
+        position: fixed;
+        bottom: 0;
+        width: 963px;
+    }
+    #logo
+    {
+        position: absolute;
+        padding: 15px 0 0 10px;
+    }
+    #mono
+    {
+        position: absolute;
+        left: 860px;
+        margin: 10px 0 0 0;
+    }
+    #demo
+    {
+        padding: 15px 0 5px 0;
+        text-align: center;
+    }
+    #disclaimer {
+        text-align: center;
+        color: #444;
+        font-size: 11px;
+    }
+    .subautoquery TH {
+        font-size: 12px;
+        padding-left: 15px;
+    }
+    .aqviewer {
+        text-align: center; 
+        padding: 10px; 
+        font-size: 20px;
+    }
+    .aqviewer a {
+        color: #0a3;
+        text-decoration: none;
+    }
+    .aqviewer a:hover {
+        text-decoration: underline;
+    }
+
+
+</style>
+</head>
+<body>
+
+    
+
+    <a id="github" href="https://github.com/DoctorEvidence/nbt"><img src="img/dre_logo.png" alt="Nbt project" height="75px"/></a>
+
+    <div id="body">
+        
+    <h1>Join Our Team</h1>
+
+    <p>
+        Interested in joining our team? Great! Send us your resume, and we will be in touch as soon as possible.
+    </p>
+
+    <h3>Nbt API</h3>
+    <p>
+        We have a very simple REST API for our Nbt process. We will keep all your information confidential and safe--while your application is in review, no personally identifiable information will be released to anyone. We will use your contact information only to communicate directly with you about your application, and as soon as we complete the process or you request to be removed (whichever comes first), your application will be permanently deleted. 
+
+        Applied before and want to try again? No problem; we keep no permanent records!
+    </p>
+    <table id="rest">
+        <thead>
+        <tr>
+            <th></th>
+            <th>Path</th>
+            <th>Formats</th>
+            <th>Code</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>All Companies</th>
+            <td><a href="companies">companies</a></td>
+            <td class="c3"><a href="companies.json">json</a><a href="companies.xml">xml</a><a href="companies.html">html</a><a href="companies.csv">csv</a><a href="companies.jsv">jsv</a></td>
+            <td class="c4"><a href="https://github.com/DoctorEvidence/nbt/src/Nbt/ServiceInterface/CustomersService.cs"><b>CustomersService.cs</b></a></td>
+        </tr>
+        <tr>
+            <th>Customer Maria Anders</th>
+            <td><a href="customers/ALFKI">customers/ALFKI</a></td>
+            <td class="c3"><a href="customers/ALFKI.json">json</a><a href="customers/ALFKI.xml">xml</a><a href="customers/ALFKI.html">html</a><a href="customers/ALFKI.csv">csv</a><a href="customers/ALFKI.jsv">jsv</a></td>
+            <td class="c4"><a href="https://github.com/NetCoreApps/Nbt/blob/master/src/Nbt.ServiceInterface/CustomerDetailsService.cs"><b>CustomerDetailsService.cs</b></a></td>
+        </tr>
+        <tr>
+            <th>Customer Maria Anders Orders</th>
+            <td><a href="customers/ALFKI/orders">customers/ALFKI/orders</a></td>
+            <td class="c3"><a href="customers/ALFKI/orders.json">json</a><a href="customers/ALFKI/orders.xml">xml</a><a href="customers/ALFKI/orders.html">html</a><a href="customers/ALFKI/orders.csv">csv</a><a href="customers/ALFKI/orders.jsv">jsv</a></td>
+            <td class="c4"><a href="https://github.com/NetCoreApps/Nbt/blob/master/src/Nbt.ServiceInterface/OrdersService.cs"><b>OrdersService.cs</b></a></td>
+        </tr>
+        <tr>
+            <th>Latest Orders</th>
+            <td><a href="orders">orders</a></td>
+            <td class="c3"><a href="orders.json">json</a><a href="orders.xml">xml</a><a href="orders.html">html</a><a href="orders.csv">csv</a><a href="orders.jsv">jsv</a></td>
+            <td class="c4">OrdersService.cs</td>
+        </tr>
+        <tr>
+            <th>Latest Orders - page 2</th>
+            <td><a href="orders/page/2">orders/page/2</a></td>
+            <td class="c3"><a href="orders/page/2.json">json</a><a href="orders/page/2.xml">xml</a><a href="orders/page/2.html">html</a><a href="orders/page/2.csv">csv</a><a href="orders/page/2.jsv">jsv</a></td>
+            <td class="c4">OrdersService.cs</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="aqviewer">Nbt <a href="http://docs.servicestack.net/autoquery.html">AutoQuery</a> Services</td>
+        </tr>
+        <tr>
+            <th>Customers</th>
+            <th><a href="query/customers">/query/customers</a></th>
+            <td class="c3"><a href="/query/customers.json">json</a><a href="/query/customers.xml">xml</a><a href="/query/customers.html">html</a><a href="/query/customers.csv">csv</a><a href="/query/customers.jsv">jsv</a></td>
+            <td class="c4"><b><a href="https://github.com/NetCoreApps/Nbt/blob/master/src/Nbt.ServiceModel/AutoQuery.cs">AutoQuery.cs</a></b></td>
+        </tr>
+        <tr class="subautoquery">
+            <th>Countries Starting With 'U'</th>
+            <th><a href="query/customers?CountryStartsWith=U">CountryStartsWith=U</a></th>
+            <td class="c3"><a href="/query/customers.json?CountryStartsWith=U">json</a><a href="/query/customers.xml?CountryStartsWith=U">xml</a><a href="/query/customers.html?CountryStartsWith=U">html</a><a href="/query/customers.csv?CountryStartsWith=U">csv</a><a href="/query/customers.jsv?CountryStartsWith=U">jsv</a></td>
+            <td class="c4">AutoQuery.cs</td>
+        </tr>
+        <tr class="subautoquery">
+            <th>Customers IN (CHOPS,FRANK)</th>
+            <th><a href="query/customers?Ids=CHOPS,FRANK">Ids=CHOPS,FRANK</a></th>
+            <td class="c3"><a href="query/customers.json?Ids=CHOPS,FRANK">json</a><a href="/query/customers.xml?Ids=CHOPS,FRANK">xml</a><a href="/query/customers.html?Ids=CHOPS,FRANK">html</a><a href="/query/customers.csv?Ids=CHOPS,FRANK">csv</a><a href="/query/customers.jsv?Ids=CHOPS,FRANK">jsv</a></td>
+            <td class="c4">AutoQuery.cs</td>
+        </tr>
+        <tr>
+            <th>Orders</th>
+            <th><a href="query/orders">/query/orders</a></th>
+            <td class="c3"><a href="query/orders.json">json</a><a href="/query/orders.xml">xml</a><a href="/query/orders.html">html</a><a href="/query/orders.csv">csv</a><a href="/query/orders.jsv">jsv</a></td>
+            <td class="c4">AutoQuery.cs</td>
+        </tr>
+        <tr class="subautoquery">
+            <th>Freight more than $300</th>
+            <th><a href="query/orders?Freight>=300">Freight>=300</a></th>
+            <td class="c3"><a href="query/orders.json?Freight>=300">json</a><a href="/query/orders.xml?Freight>=300">xml</a><a href="/query/orders.html?Freight>=300">html</a><a href="/query/orders.csv?Freight>=300">csv</a><a href="/query/orders.jsv?Freight>=300">jsv</a></td>
+            <td class="c4">AutoQuery.cs</td>
+        </tr>
+        <tr class="subautoquery">
+            <th>Orders by Customer, Id Desc</th>
+            <th><a href="query/orders?OrderBy=CustomerId,-Id">OrderBy=CustomerId,-Id</a></th>
+            <td class="c3"><a href="query/orders.json?OrderBy=CustomerId,-Id">json</a><a href="/query/orders.xml?OrderBy=CustomerId,-Id">xml</a><a href="/query/orders.html?OrderBy=CustomerId,-Id">html</a><a href="/query/orders.csv?OrderBy=CustomerId,-Id">csv</a><a href="/query/orders.jsv?OrderBy=CustomerId,-Id">jsv</a></td>
+            <td class="c4">AutoQuery.cs</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="4" class="aqviewer">
+                <a href="ss_admin/autoquery/">AutoQuery UI for Nbt Services</a>
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+
+    </div>
+
+    <div id="footer">
+        <a id="logo" href="https://dev.doctorevidence.com/">
+            <img src="img/drelogo.png" alt="ServiceStack" /></a> 
+    </div>
+
+</body>
+</html>
